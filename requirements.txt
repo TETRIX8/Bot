@@ -1,0 +1,15 @@
+# Requirements for the project
+
+# Pydantic
+pydantic
+pydantic-settings
+
+# Aiogram
+aiogram
+
+
+# Requests
+requests
+
+# BeautifulSoup
+beautifulsoup4
