@@ -16,7 +16,7 @@ dp = Dispatcher()
 
 # Regex patterns for validating Instagram and TikTok URLs
 REG_INSTAGRAM = r'https:\/\/www\.instagram\.com\/(p|reel)\/([A-Za-z0-9-_]+)\/'
-REG_TIKTOK = r'https://(vm\.tiktok\.com/\w+|www\.tiktok\.com/@[\w.-]+/(photo|video)/\d+|www\.tiktok\.com/video/\d+|www\.tiktok\.com/@\w+/video/\d+|vm\.tiktok\.com/\d+|www\.tiktok\.com/t/\w+|m\.tiktok\.com/v/\d+|www\.tiktok\.com/[\w.-]+/video/\d+|vt\.tiktok\.com/\w+)'
+REG_TIKTOK = r'https://(?:www\.|m\.)?tiktok\.com/(?:(?:@[\w.-]+/(?:video|photo|)(/\d+))|(?:video|photo)/(\d+)|(?:t/(\w+))|(?:v/(\d+))|(?:[\w-]+/(?:video|photo)/(\d+))|(?:vm\.tiktok\.com/(\w+)))'
 
 @dp.message(Command('start'))
 async def send_welcome(message: types.Message):
