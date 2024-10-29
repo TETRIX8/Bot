@@ -50,7 +50,7 @@ async def download_content(message: types.Message):
 
             await msg.delete()
         else:
-            await message.answer("Invalid URL. Please send a valid Instagram or TikTok link.")
+            await message.answer("Неверный URL-адрес. Пожалуйста, отправьте действительную ссылку Instagram или TikTok.")
     except Exception as e:
         logger.error(f"Failed to send media: {e}")
         await message.answer("Failed to process the media.")
